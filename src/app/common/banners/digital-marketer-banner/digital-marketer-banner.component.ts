@@ -1,10 +1,10 @@
 import { NgClass,  ViewportScroller } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'rlc-digital-marketer-banner',
-    imports: [NgClass, RouterLink],
+    imports: [NgClass],
     templateUrl: './digital-marketer-banner.component.html',
     styleUrl: './digital-marketer-banner.component.scss',
 })

@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 
 @Component({
     selector: 'rlc-contact',
-    imports: [NgClass],
+    imports: [],
     templateUrl: './contact.component.html',
     styleUrl: './contact.component.scss',
 })

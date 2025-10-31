@@ -1,0 +1,44 @@
+.main-banner {
+    height: 40vh;
+}
+.overley {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ourHistory{
+    color: var(--whiteColor);
+}
+p{
+    font-family: var(--fontFamily1);
+    color: var(--whiteColor);
+}
+i{
+    font-size: 1rem;
+}
+ul{
+    list-style: circle;
+}
+h1 span,h3,h5{
+    color: var(--primaryColor);
+    font-family: var(--fontFamily1);
+    font-weight: bold;
+    font-style: italic;
+}
+.card-body{
+    color: var(--whiteColor);
+    padding-top: 10px ;
+}
+.offers-card img{
+    transition: all 0.4s ease-in-out;
+    &:hover{
+        transform: scale(1.5);
+    }
+}
+@media only screen and (max-width: 900px) {
+    p{
+        font-size: 1rem;
+    }
+}
