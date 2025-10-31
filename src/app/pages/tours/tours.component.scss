@@ -24,8 +24,15 @@
 h2,p{
     color: var(--whiteColor);
 }
-h5{
+.tours{
     font-family: var(--fontFamily1);
     color: var(--primaryColor);
     letter-spacing: 3px;
+}
+.card{
+    background-color: var(--primaryColor);
+}
+.card-title {
+  color: var(--primaryColor);
+  font-family: var(--fontFamily1);
 }
