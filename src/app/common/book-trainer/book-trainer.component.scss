@@ -1,0 +1,60 @@
+.book-trainer-area {
+    position: relative;
+    z-index: 1;
+}
+.book-trainer-content {
+    text-align: center;
+
+    h2 {
+        animation: filling 3s ease forwards;
+        -webkit-text-fill-color: transparent;
+        background-position: center 50%;
+        -webkit-background-clip: text;
+        color: var(--whiteColor);
+        margin-bottom: 20px;
+        font: {
+            size: 155px;
+            weight: 900;
+            family: var(--fontFamily1);
+        };
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .book-trainer-content {
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .book-trainer-content {
+        h2 {
+            font-size: 100px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .book-trainer-content {
+        h2 {
+            font-size: 100px;
+        }
+    }
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {}

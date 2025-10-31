@@ -1,0 +1,62 @@
+<div class="feedback-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-12">
+                <div
+                    class="feedback-content"
+                    style="background-image: url(img/feedback-bg.jpg);"
+                >
+                    <div class="d-table">
+                        <div class="d-table-cell">
+                            <div class="section-title">
+                                <span class="sub-title">Testimonials</span>
+                                <h2>Feedback: What Clients are Saying</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div
+                    class="feedback-slides-content bg-0f1d22"
+                    [ngClass]="{'lr-padding': router.url === '/index-7' || router.url === '/index-8' || router.url === '/index-9' || router.url === '/index-11' || router.url === '/index-13' || router.url === '/index-14' || router.url === '/index-15' || router.url === '/index-17' || router.url === '/index-19' || router.url === '/index-20' || router.url === '/index-21' || router.url === '/index-23' || router.url === '/index-37'}"
+                >
+                    <div class="feedback-slides">
+                        <owl-carousel-o [options]="feedbackSlides">
+                            <ng-template carouselSlide>
+                                <div class="single-feedback-item">
+                                    <i class="ri-double-quotes-r"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt ut labore et dolore magna aliqua. eiusmod Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                    <div class="client-info">
+                                        <h3>Jason Statham</h3>
+                                        <span>Web Developer</span>
+                                    </div>
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="single-feedback-item">
+                                    <i class="ri-double-quotes-r"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt ut labore et dolore magna aliqua. eiusmod Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                    <div class="client-info">
+                                        <h3>Sarah Taylor</h3>
+                                        <span>Web Designer</span>
+                                    </div>
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="single-feedback-item">
+                                    <i class="ri-double-quotes-r"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt ut labore et dolore magna aliqua. eiusmod Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                                    <div class="client-info">
+                                        <h3>David Warner</h3>
+                                        <span>PHP Developer</span>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

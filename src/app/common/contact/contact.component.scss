@@ -1,0 +1,217 @@
+.contact-area {
+    .container-fluid {
+        padding: {
+            left: 0;
+            right: 0;
+        };
+        .row {
+            margin: {
+                left: 0;
+                right: 0;
+            };
+            .col-lg-7, .col-lg-5 {
+                padding: {
+                    left: 0;
+                    right: 0;
+                };
+            }
+        }
+    }
+}
+.contact-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: {
+        position: center center;
+        size: cover;
+        repeat: no-repeat;
+    };
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        z-index: -1;
+        background-color: var(--blackColor);
+        opacity: 0.71;
+    }
+    .section-title {
+        text-align: start;
+        max-width: 515px;
+        margin: {
+            bottom: 0;
+            left: auto;
+        };
+        h2 {
+            max-width: 330px;
+            margin: {
+                left: 0;
+                right: 0;
+            };
+        }
+    }
+}
+.contact-form {
+    padding: {
+        top: 120px;
+        bottom: 120px;
+        left: 90px;
+        right: 90px;
+    };
+    #contactForm {
+        .default-btn {
+            margin-top: 10px;
+        }
+        .with-errors {
+            ul {
+                padding-left: 0;
+                list-style-type: none;
+                margin: {
+                    top: 10px;
+                    bottom: 0;
+                };
+                li {
+                    color: red;
+                    font-size: 15px;
+                }
+            }
+        }
+        #msgSubmit {
+            margin-bottom: 0;
+
+            &.text-danger, &.text-success {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .contact-content {
+        height: auto;
+        padding: {
+            left: 15px;
+            right: 15px;
+            top: 60px;
+            bottom: 35px;
+        };
+        .section-title {
+            text-align: center;
+
+            h2 {
+                max-width: 100%;
+            }
+        }
+    }
+    .contact-form {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+            left: 15px;
+            right: 15px;
+        };
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .contact-form {
+        #contactForm {
+            max-width: 540px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .contact-content {
+        height: auto;
+        padding: {
+            left: 15px;
+            right: 15px;
+            top: 100px;
+            bottom: 50px;
+        };
+        .section-title {
+            text-align: center;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+            h2 {
+                max-width: 100%;
+            }
+        }
+    }
+    .contact-form {
+        padding: {
+            top: 100px;
+            bottom: 100px;
+        };
+        #contactForm {
+            max-width: 720px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .contact-content {
+        .section-title {
+            max-width: 100%;
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+            h2 {
+                max-width: 100%;
+            }
+        }
+    }
+    .contact-form {
+        padding: {
+            left: 40px;
+            right: 40px;
+            top: 100px;
+            bottom: 100px;
+        };
+    }
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {
+
+    .contact-form {
+        padding: {
+            left: 120px;
+            right: 120px;
+        };
+        &.lr-padding {
+            #contactForm {
+                max-width: 640px;
+            }
+        }
+    }
+
+}

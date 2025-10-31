@@ -1,0 +1,60 @@
+<nav
+    class="navbar navbar-expand-lg navbar-light bg-light"
+    [ngClass]="{'is-sticky': isSticky, 'navbar-style-three': router.url === '/index-16' || router.url === '/index-28'}"
+    [class.active]="classApplied"
+>
+    <div class="container">
+        <a class="navbar-brand" routerLink="." (click)="onClick('home')">
+            <img src="img/small-logo.png" alt="logo">
+        </a>
+        <button
+            (click)="toggleClass()"
+            class="navbar-toggler"
+            type="button"
+        >
+            <span class="burger-menu">
+                <span class="top-bar"></span>
+                <span class="middle-bar"></span>
+                <span class="bottom-bar"></span>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item" (click)="toggleClass()">
+                    <span class="nav-link" (click)="onClick('home')">
+                        Home
+                    </span>
+                </li>
+                <li class="nav-item" (click)="toggleClass()">
+                    <span class="nav-link" (click)="onClick('shop')">
+                        Shop
+                    </span>
+                </li>
+                <li class="nav-item" (click)="toggleClass()">
+                    <span class="nav-link" (click)="onClick('brands')">
+                        Brands
+                    </span>
+                </li>
+                <li class="nav-item" (click)="toggleClass()">
+                    <span class="nav-link" (click)="onClick('blog')">
+                        Blog
+                    </span>
+                </li>
+                <li class="nav-item" (click)="toggleClass()">
+                    <span class="nav-link" (click)="onClick('instagram')">
+                        Instagram
+                    </span>
+                </li>
+            </ul>
+            <div class="others-option">
+                <button
+                    type="button"
+                    class="default-btn"
+                    (click)="onClick('shop')"
+                >
+                    Shop Now
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>

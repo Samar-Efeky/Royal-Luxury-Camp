@@ -1,0 +1,115 @@
+.main-banner {
+    z-index: 1;
+    height: 100vh;
+    position: relative;
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center center;
+    };
+}
+.main-banner-content {
+    text-align: center;
+    margin: {
+        left: auto;
+        right: auto;
+    };
+    .sub-title {
+        color: var(--whiteColor);
+        margin-bottom: 15px;
+        display: block;
+        font: {
+            weight: 300;
+            size: 24px;
+        };
+    }
+    h1 {
+        color: var(--whiteColor);
+        margin-bottom: -10px;
+        line-height: 1;
+        font: {
+            size: 162px;
+            weight: 400;
+            family: var(--fontFamily3);
+        };
+    }
+    h6 {
+        color: var(--whiteColor);
+        margin-bottom: 0;
+        font: {
+            size: 28px;
+            weight: 600;
+            family: var(--fontFamily1);
+        };
+        ngx-typed-writer {
+            color: var(--primaryColor);
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .main-banner {
+        height: auto;
+        padding: {
+            top: 165px;
+            bottom: 180px;
+        };
+    }
+    .main-banner-content {
+        .sub-title {
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+        h1 {
+            margin-bottom: 18px;
+            font-size: 80px;
+        }
+        h6 {
+            font-size: 17px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .main-banner-content {
+        h1 {
+            margin-bottom: 15px;
+        }
+    }
+    
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .main-banner-content {
+        h1 {
+            margin-bottom: -5px;
+            font-size: 120px;
+        }
+        h6 {
+            font-size: 22px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .main-banner-content {
+        h1 {
+            margin-bottom: 0;
+            font-size: 115px;
+        }
+    }
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {}

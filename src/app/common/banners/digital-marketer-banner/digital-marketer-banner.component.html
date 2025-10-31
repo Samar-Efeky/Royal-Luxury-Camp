@@ -1,0 +1,27 @@
+<!-- Default -->
+<div
+    class="main-banner"
+    style="background-image: url(img/banner/2.png)"
+    [ngClass]="{
+        'd-none': router.url === '/index-37' || router.url === '/index-38'
+    }"
+>
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="main-banner-content">
+                    <span class="sub-title"> Welcome To </span>
+                    <h1>Royal Luxury Camp</h1>
+                    <h6>We are <span>The Camping Group You Need</span></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-btn">
+        <a routerLink="." (click)="onClick('about')">
+            <span class="mouse">
+                <span></span>
+            </span>
+        </a>
+    </div>
+</div>

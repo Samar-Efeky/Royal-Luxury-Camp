@@ -1,0 +1,192 @@
+.work-details-image {
+    margin-bottom: 30px;
+}
+.work-details-desc {
+    margin-top: 5px;
+
+    h3 {
+        margin-bottom: 15px;
+        color: var(--whiteColor);
+        font: {
+            size: 24px;
+            weight: 700;
+        };
+    }
+    p {
+        color: var(--whiteColor);
+        font-size: 15px;
+        opacity: 0.8;
+    }
+    .features-text {
+        margin: {
+            top: 25px;
+            bottom: 25px;
+        };
+        h4 {
+            margin-bottom: 15px;
+            color: var(--whiteColor);
+            font: {
+                size: 17px;
+                weight: 600;
+            };
+            i {
+                top: 0;
+                font-size: 18px;
+                margin-right: 4px;
+                position: relative;
+                color: var(--primaryColor);
+            }
+        }
+    }
+    .work-details-info {
+        display: flex;
+        flex-wrap: wrap;
+        margin: {
+            right: -15px;
+            left: -15px;
+            top: 35px;
+        };
+        .single-info-box {
+            flex: 0 0 20%;
+            max-width: 20%;
+            padding: {
+                left: 15px;
+                right: 15px;
+            }
+            h4 {
+                margin-bottom: 10px;
+                color: var(--whiteColor);
+                font: {
+                    size: 19px;
+                    weight: 600;
+                };
+            }
+            span {
+                display: block;
+                font-size: 15px;
+                color: var(--whiteColor);
+            }
+            .social {
+                padding-left: 0;
+                margin-bottom: 0;
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    margin-right: 8px;
+
+                    a {
+                        color: var(--whiteColor);
+                        display: inline-block;
+
+                        &:hover {
+                            color: var(--primaryColor);
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .work-details-desc {
+        h3 {
+            font-size: 18px;
+        }
+        .features-text {
+            h4 {
+                font-size: 15px;
+            }
+        }
+        p {
+            font-size: 14px;
+        }
+        .work-details-info {
+            margin-top: 15px;
+
+            .single-info-box {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-top: 20px;
+
+                h4 {
+                    font-size: 18px;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .work-details-desc {
+        .work-details-info {
+            .single-info-box {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .work-details-desc {
+        h3 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 14px;
+        }
+        .features-text {
+            h4 {
+                font-size: 16px;
+            }
+        }
+        .work-details-info {
+            margin-top: 15px;
+
+            .single-info-box {
+                margin-top: 20px;
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+
+                h4 {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .work-details-desc {
+        .work-details-info {
+            margin-top: 15px;
+
+            .single-info-box {
+                margin-top: 20px;
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+            }
+        }
+    }
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {}

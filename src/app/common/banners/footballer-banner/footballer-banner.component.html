@@ -1,0 +1,78 @@
+<!-- Default -->
+<div
+    class="home-area"
+    [ngClass]="{
+        'home-area-two':
+            router.url === '/index-10' || router.url === '/index-22',
+        'd-none': router.url === '/index-28'
+    }"
+>
+    <div class="home-slides">
+        <owl-carousel-o [options]="homeSlides">
+            <ng-template carouselSlide>
+                <div
+                    class="main-banner"
+                    style="background-image: url(img/banner/1.png)"
+                ></div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div
+                    class="main-banner"
+                    style="background-image: url(img/banner/2.png)"
+                ></div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div
+                    class="main-banner"
+                    style="background-image: url(img/banner/3.png)"
+                ></div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div class="hero-content">
+        <h1>Royal Luxury Camp</h1>
+    </div>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 28 -->
+<div
+    class="home-area"
+    [ngClass]="{ 'is-sticky': isSticky }"
+    *ngIf="router.url === '/index-28'"
+>
+    <div class="home-slides">
+        <owl-carousel-o [options]="homeSlides">
+            <ng-template carouselSlide>
+                <div
+                    class="main-banner"
+                    style="background-image: url(img/main-banner6.jpg)"
+                ></div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div
+                    class="main-banner"
+                    style="background-image: url(img/main-banner7.jpg)"
+                ></div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div
+                    class="main-banner"
+                    style="background-image: url(img/main-banner8.jpg)"
+                ></div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div class="hero-content">
+        <h1>Alexander Ludwig</h1>
+    </div>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>

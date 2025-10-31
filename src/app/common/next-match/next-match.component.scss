@@ -1,0 +1,92 @@
+.countdown-area {
+    padding: {
+        top: 70px;
+        bottom: 70px;
+    };
+}
+.countdown-content {
+    text-align: end;
+    padding-right: 10px;
+
+    h2 {
+        margin-bottom: 0;
+        color: var(--whiteColor);
+        font: {
+            size: 40px;
+            weight: 700;
+            style: italic;
+        };
+    }
+}
+.countdown-timer {
+    padding-left: 10px;
+    color: var(--primaryColor);
+    font: {
+        size: 40px;
+        weight: 500;
+        style: italic;
+    };
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .countdown-area {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        };
+    }
+    .countdown-content {
+        text-align: center;
+        padding-right: 0;
+
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .countdown-timer {
+        font-size: 25px;
+        padding-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .countdown-content {
+        padding-right: 0;
+        text-align: center;
+
+        h2 {
+            font-size: 35px;
+        }
+    }
+    .countdown-timer {
+        text-align: center;
+        margin-top: 25px;
+        padding-left: 0;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .countdown-content {
+        padding-right: 0;
+    }
+    .countdown-timer {
+        padding-left: 0;
+    }
+
+}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {}

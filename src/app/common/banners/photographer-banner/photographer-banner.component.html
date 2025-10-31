@@ -1,0 +1,67 @@
+<div
+    class="main-banner"
+    style="background-image: url(img/main-banner2.jpg);"
+>
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="main-banner-content">
+                    <span class="sub-title">Hello I'am</span>
+                    <h1>Alexander Ludwig</h1>
+                    <h6>
+                        I’am a 
+                        <ngx-typed-writer
+                            [strings]="['Photographer', 'Landscape Photographer', 'Wildlife Photographer', 'Aerial Photographer']"
+                            [cursorChar]="'|'"
+                            [showCursor]="true"
+                            [backSpeed]="30"
+                            [typeSpeed]="30"
+                        />
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-btn">
+        <a routerLink="." (click)="onClick('about')">
+            <span class="mouse">
+                <span></span>
+            </span>
+        </a>
+    </div>
+    <div
+        id="particle-container"
+        *ngIf="router.url === '/index-39'"
+    >
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+</div>
