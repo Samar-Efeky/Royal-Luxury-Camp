@@ -3,13 +3,13 @@ import { AsideNavbarComponent } from '../../common/aside-navbar/aside-navbar.com
 import { RouterLink } from '@angular/router';
 import { FooterComponent } from '../../common/footer/footer.component';
 @Component({
-    selector: 'rlc-work-details',
+    selector: 'rlc-activity-details',
     imports: [
         RouterLink,
         AsideNavbarComponent,
         FooterComponent,
     ],
-    templateUrl: './work-details.component.html',
-    styleUrl: './work-details.component.scss',
+    templateUrl: './activity-details.component.html',
+    styleUrl: './activity-details.component.scss',
 })
-export class WorkDetailsComponent {}
+export class ActivityDetailsComponent {}

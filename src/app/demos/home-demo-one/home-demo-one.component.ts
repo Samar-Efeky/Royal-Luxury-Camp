@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AsideNavbarComponent } from '../../common/aside-navbar/aside-navbar.component';
-import { WorksComponent } from '../../common/works/works.component';
 import { FeedbackComponent } from '../../common/feedback/feedback.component';
 import { ClientsComponent } from '../../common/clients/clients.component';
 import { HireMeComponent } from '../../common/hire-me/hire-me.component';
@@ -10,6 +9,7 @@ import { DigitalMarketerBannerComponent } from '../../common/banners/digital-mar
 import { DigitalMarketerAboutComponent } from '../../common/abouts/digital-marketer-about/digital-marketer-about.component';
 import { DigitalMarketerServicesComponent } from '../../common/services/digital-marketer-services/digital-marketer-services.component';
 import { BlogsComponent } from '../../common/blogs/blogs.component';
+import { ActivitiesComponent } from '../../common/works/activities.component';
 
 @Component({
     selector: 'rlc-home-demo-one',
@@ -18,7 +18,7 @@ import { BlogsComponent } from '../../common/blogs/blogs.component';
         DigitalMarketerBannerComponent,
         DigitalMarketerAboutComponent,
         DigitalMarketerServicesComponent,
-        WorksComponent,
+        ActivitiesComponent,
         FeedbackComponent,
         ClientsComponent,
         HireMeComponent,

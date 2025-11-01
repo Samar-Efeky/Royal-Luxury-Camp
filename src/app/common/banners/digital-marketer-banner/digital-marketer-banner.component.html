@@ -1,27 +1,43 @@
 <!-- Default -->
 <div
-    class="main-banner"
+    class="main-banner position-relative"
     style="background-image: url(img/banner/2.png)"
     [ngClass]="{
         'd-none': router.url === '/index-37' || router.url === '/index-38'
     }"
 >
-    <div class="d-table">
+   <div class="overley position-absolute w-100 h-100 top-0 start-0">
+     <div class="d-table">
         <div class="d-table-cell">
-            <div class="container">
-                <div class="main-banner-content">
+            <div class="">
+                <div class="main-banner-content text-center px-sm-3 px-1">
                     <span class="sub-title"> Welcome To </span>
                     <h1>Royal Luxury Camp</h1>
-                    <h6>We are <span>The Camping Group You Need</span></h6>
+                    <h6 class="py-3">Glamping In The Moroccan Sahara Desert</h6>
+                    <p class="paragraph  fst-italic">
+                        Royal Luxury Camp resides at the heart of the Moroccan Sahara desert in the dunes of Erg Chebbi
+                        Merzouga famously known as <strong>The Sea of Dunes</strong>, providing travelers and tourists
+                        coming to Morocco the most luxurious stay and a unique adventure experiencing the golden sands
+                        of the Sahara Desert in Morocco.
+                    </p>
+                    <p class="paragraph fst-italic pt-3">
+                        We offer Glamping services where you get hosted in a fully equipped camp in the middle of the
+                        sand dunes with air conditioning, private toilet & shower, king-sized beds, mattresses, sheets,
+                        pillows, blankets & carpets, lamps and beautiful Moroccan furnishings — all tastefully arranged
+                        to enhance your stay at our Royal Luxury Camp.
+                    </p>
+                    <div class="scroll-btn mt-3">
+                        <p class="d-block mb-0">Show Our Activities</p>
+                        <a (click)="onClick('activities')">
+                            <span class="mouse">
+                                <span></span>
+                            </span>
+                            
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="scroll-btn">
-        <a (click)="onClick('about')">
-            <span class="mouse">
-                <span></span>
-            </span>
-        </a>
-    </div>
+   </div>
 </div>
