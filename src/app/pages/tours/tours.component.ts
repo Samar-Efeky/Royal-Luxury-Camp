@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { AsideNavbarComponent } from '../../common/aside-navbar/aside-navbar.component';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
+import { FooterComponent } from '../../common/footer/footer.component';
 @Component({
   selector: 'rlc-tours',
-  imports: [AsideNavbarComponent],
-  templateUrl: './tours.component.html',
+  imports: [AsideNavbarComponent,FooterComponent],
+templateUrl: './tours.component.html',
   styleUrl: './tours.component.scss'
 })
 export class ToursComponent {

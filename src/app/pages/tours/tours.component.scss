@@ -1,26 +1,3 @@
-.main-banner {
-    z-index: 1;
-    height: 100vh;
-    position: relative;
-    background: {
-        size: cover;
-        repeat: no-repeat;
-        position: center center;
-    };
-    .bg-image {
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-        position: absolute;
-        background: {
-            position: center center;
-            repeat: no-repeat;
-            size: cover;
-        };
-    }
-}
 h2,p{
     color: var(--whiteColor);
 }
@@ -31,8 +8,17 @@ h2,p{
 }
 .card{
     background-color: var(--primaryColor);
+    img{
+        transition: all 0.4s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
 }
 .card-title {
   color: var(--primaryColor);
   font-family: var(--fontFamily1);
+}
+.card-body{
+    background-color: var(--darkBlueColor);
 }
