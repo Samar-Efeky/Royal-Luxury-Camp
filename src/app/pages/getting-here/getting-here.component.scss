@@ -1,0 +1,34 @@
+.main-banner{
+    height: 70vh;
+    .overley{
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+}
+.getting-here{
+    background-color: var(--darkBlueColor);
+}
+.getting-here-content{
+    .card{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    img{
+        transition: all 0.4s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+.card-title {
+  color: var(--primaryColor);
+  font-family: var(--fontFamily1);
+  font-weight: bolder;
+}
+.card-body{
+    background-color: var(--blackColor);
+}
+}
+ .questions{
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+   }

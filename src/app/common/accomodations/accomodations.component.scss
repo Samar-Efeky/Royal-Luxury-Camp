@@ -1,0 +1,20 @@
+.camp-card{
+    background-color: var(--blackColor);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+        img{
+            height:200px;
+            object-fit:cover;
+            width:100%;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        h5{
+            color: var(--primaryColor);
+        }
+        &:hover{
+            box-shadow: 0 2px 4px var(--primaryColor);
+        }
+}

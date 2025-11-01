@@ -10,7 +10,6 @@
     --darkBlueColor: #0f1d22;
     --transition: .5s;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -28,7 +27,7 @@ img {
 a {
     text-decoration: none;
     transition: var(--transition);
-
+    cursor: pointer;
     &:hover {
         text-decoration: none;
     }
@@ -169,7 +168,7 @@ p {
         margin-bottom: 12px;
         color: var(--primaryColor);
         font: {
-            size: 18px;
+            size: 1.6rem;
             weight: 600;
         };
     }
@@ -177,14 +176,18 @@ p {
         color: var(--whiteColor);
         max-width: 635px;
         font: {
-            size: 40px;
+            size: 1.4rem;
             weight: 700;
+            
         };
         margin: {
             bottom: 0;
             left: auto;
             right: auto;
         };
+    }
+    p{
+        letter-spacing: 1px;
     }
 }
 
@@ -941,11 +944,11 @@ textarea {
 
         .sub-title {
             margin-bottom: 10px;
-            font-size: 15px;
+            font-size: 1.4rem;
         }
         h2 {
             max-width: 100%;
-            font-size: 25px;
+            font-size: 1.3rem;
             line-height: 1.4;
         }
     }
